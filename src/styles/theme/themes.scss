@@ -1,0 +1,30 @@
+$themes: (
+    default: $theme-default,
+    white: $theme-white
+);
+$theme-map: ();
+@mixin themeify($name: '', $key: '') {
+    @each $theme-name, $map in $themes {
+        $theme-map: $map !global;
+        [data-theme=#{"" + $theme-name}] & {
+            @if ($name != '' and $key != '') {
+                #{$name}: map-get($theme-map, $key);
+            }
+            @else {
+                @content;
+            }
+        }
+    }
+}
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}
+
+// 导出主题变量，key前面跟上 themeName- 用于区分不同主题的变量
+:export {
+    @each $theme-name, $map in $themes {
+        @each $key, $value in $map {
+            #{"" + $theme-name}-#{$key}: $value;
+        }
+    }
+}

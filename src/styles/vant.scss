@@ -1,0 +1,43 @@
+/* 文本框 */
+// .ant-input {
+//     height: 40px;
+// }
+// .ant-input-affix-wrapper {
+//     padding: 0 11px !important;
+// }
+/* 模态框 */
+.ant-modal {
+    .ant-modal-header {
+        @include themeify {
+            background: rgba(themed("main-color"), 0.9) ;
+            border-bottom: 1px solid rgba(themed("font-color"),0.40);
+        }
+    }
+    .ant-modal-title {
+        @include themeify {
+            color: themed("font-color");
+        }
+    }
+    .ant-modal-close {
+        @include themeify {
+            color: rgba(themed("font-color"),0.55);
+        }
+    }
+    .ant-modal-content {
+        @include themeify {
+            background: themed("main-color");
+            border: 1px solid themed("popup-border-color");
+        }
+        border-radius: 4px;
+    }
+    .anticon svg {
+        @include themeify {
+            color: rgba(themed("font-color"),0.55);
+        }
+    }
+}
+.ant-form-item-label > label {
+    @include themeify {
+        color: rgba(themed("font-color"), 0.8);
+    }
+}
