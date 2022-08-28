@@ -7,14 +7,14 @@ export function createManageList() {
     for(let i = 0; i < 20; i++) {
         infos.push({
             id: `${i + 1}`,
-            datSource: 'APP上报',
-            questionType: '大管接小管',
-            drainType: '污水',
-            drainArea: '荔城',
-            aboutRoald: '广州市荔湾区永明街道',
-            facilityType: '排水管道',
+            datSource: '测试1',
+            questionType: '测试内容2',
+            drainType: '测试',
+            drainArea: '广东',
+            aboutRoald: '广东广州或深圳',
+            facilityType: '测试内容3',
             disposeState: '1',
-            disposePerson: '排水管道',
+            disposePerson: '测试内容',
             disposeTime: '2021-03-08 12:47:28',
         })
     }
