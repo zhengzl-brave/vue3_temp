@@ -5,13 +5,13 @@ export function createUserList() {
     return [
         {
             id: 'user01',
-            username: 'zhengzl',
+            username: 'admin',
             password: '123456',
             token: 'P1DeqWBao0HTU47Q'
         },
         {
             id: 'user02',
-            username: 'linjc',
+            username: 'manager',
             password: '123456',
             token: 'yg8bE8nZwiCL4nQg'
         }

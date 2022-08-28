@@ -4,7 +4,7 @@ import { useSetting } from './store'
 import { getmark } from '@/utils/watermark'
 const { watermark } = getmark()
 onMounted(() => {
-  watermark('郑增亮')
+  watermark('admin')
 })
 // 主题色
 const settingStore = useSetting()
