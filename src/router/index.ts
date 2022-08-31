@@ -30,6 +30,22 @@ const routes: Array<RouteRecordRaw> = [
                     title: 'manageModel',
                     requiresAuth: true
                 }
+            },
+            {
+                path: '/designPatterns',
+                name: 'designPatterns',
+                component: () => import('@/views/components/DesignPatterns/index.vue'),
+                meta: {
+                    title: 'designPatterns',
+                }
+            },
+            {
+                path: '/statistical',
+                name: 'statistical',
+                component: () => import('@/views/components/Statistical/index.vue'),
+                meta: {
+                    title: 'statistical',
+                }
             }
         ]
     },
